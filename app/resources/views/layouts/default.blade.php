@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	<script src="js/demo.js"></script>
     @include('includes.head')
     @yield('head-content')
 </head>
