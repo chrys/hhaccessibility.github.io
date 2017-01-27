@@ -3,14 +3,8 @@
 		No location found matching the specified keywords
 	@else
 		<div class="row">
-			<div class="col-xs-7">
+			<div class="col-xs-12">
 				<h3>Name</h3>
-			</div>
-			<div class="col-xs-2">
-				<h3>Rating</h3>
-			</div>
-			<div class="col-xs-3">
-				<h3>Distance (km)</h3>
 			</div>
 		</div>
 		<div class="data">
@@ -18,14 +12,8 @@
 			<div class="location">
 				<a href="/location-report/{{ $value->id }}">
 					<div class="row">
-						<div class="col-xs-7">
+						<div class="col-xs-12">
 							{{ $value->name }}
-						</div>
-						<div class="col-xs-2">
-							Under dev.
-						</div>
-						<div class="col-xs-3">
-							{{ $base_user->getDistanceTo($value->longitude, $value->latitude) }}
 						</div>
 					</div>
 				</a>
